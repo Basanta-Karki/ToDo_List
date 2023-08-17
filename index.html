@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-do list</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="check.css">
+</head>
+
+<body>
+
+  <div class="main">
+    <h1>TOdo List</h1>
+
+    <div class="container">
+
+      <div class="first" style="max-width: 700px;">
+
+        <div class="bodyform">
+          
+          <input type="text" class="form-control" placeholder="Enter the text"  id="username">
+
+          <button type="button" id="addUser">Add text</button>
+        </div>
+        <div class="display">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Numbers</th>
+                <th scope="col">Text Here</th>
+                <th scope="col"id="act">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="records"> 
+              <tr>
+                <th scope="row">1</th>
+                <td id="gap">someone is here</td>
+                <td>
+              
+                  <button class="editBtn">
+                    <i class="btn text-white fa fa-edit btn-info mx-2"></i>Edit
+                  </button>
+                  <button class="deleteBtn">
+                    <i class="btn btn-danger text-white fa fa-trash"></i>Delete
+                  </button>
+                </td>
+                
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+    
+</body>
+</html>
